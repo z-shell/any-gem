@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/z-shell/any-gem",
   "keywords": [
-    "zinit-package",
+    "zi-package",
     "npm wrapper",
     "zsh"
   ],
@@ -45,7 +45,7 @@
       "version": "1.0.0",
       "requires": "npm;bgn"
     },
-    "zplugin-ices": {
+    "zi-ices": {
       "default": {
         "git": "",
         "lucid": "",
