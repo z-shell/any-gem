@@ -6,7 +6,7 @@
 
 </h3>
 
-# Introduction
+## Introduction
 
 > **[?]**
 > This repository not compatible with previous versions (zplugin, zinit).
@@ -16,13 +16,13 @@
 [ZI](https://github.com/z-shell/zi) can use a `package.json`
 (similar in construct to the one used in `npm` packages) to automatically:
 
--   get the plugin's Git repository OR release-package URL,
--   get the list of the recommended ices for the plugin,
-    -   there can be multiple lists of ices,
-    -   the ice lists are stored in _profiles_; there's at least one profile, _default_,
-    -   the ices can be selectively overriden.
+- get the plugin's Git repository OR release-package URL,
+- get the list of the recommended ices for the plugin,
+  - there can be multiple lists of ices,
+  - the ice lists are stored in _profiles_; there's at least one profile, _default_,
+  - the ices can be selectively overridden.
 
-# The `any-gem` Package
+## The `any-gem` Package
 
 This package is special – it is designed for easy installing of any Ruby Gems locally inside the plugin directory,
 exposing their binaries via _shims_ (i.e.: forwarder scripts) created automatically by [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex.
