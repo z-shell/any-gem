@@ -32,9 +32,10 @@
   },
   "homepage": "https://github.com/z-shell/any-gem",
   "keywords": [
-    "zi-package",
     "npm wrapper",
-    "zsh"
+    "zpackage",
+    "zsh",
+    "gem"
   ],
   "license": "MIT",
   "name": "zsh-any-gem",
@@ -43,7 +44,7 @@
       "user": "z-shell",
       "plugin": "null",
       "version": "1.0.0",
-      "requires": "npm;bgn",
+      "requires": "npm;bgn"
     },
     "zi-ices": {
       "default": {
