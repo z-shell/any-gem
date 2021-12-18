@@ -1,4 +1,11 @@
-<h3>
+<h2 align="center">
+  <a href="https://github.com/z-shell/zi">
+    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80">
+  </a>
+❮ ZI ❯ Package - Any Gem
+</h2>
+
+<h3 align="center">
 
 | **Package source:** | Source Tarball | Binary | Git | Node |             Gem              |
 | :-----------------: | :------------: | :----: | :-: | :--: | :--------------------------: |
@@ -8,10 +15,7 @@
 
 ## Introduction
 
-> **[?]**
-> This repository not compatible with previous versions (zplugin, zinit).
->
-> Please upgrade to [ZI](https://github.com/z-shell-zi)
+> This repository compatible with [ZI](https://github.com/z-shell-zi)
 
 [ZI](https://github.com/z-shell/zi) can use a `package.json`
 (similar in construct to the one used in `npm` packages) to automatically:
@@ -56,5 +60,3 @@ zi lucid id-as="${${:-%IDAS%}:-%GEM%}" as=null \
     sbin="n:bin/*" for \
         z-shell/null
 ```
-
-The package is thus a simplifier of ZI commands.
