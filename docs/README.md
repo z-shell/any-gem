@@ -5,15 +5,13 @@
 ❮ ZI ❯ Package - Any Gem
 </h2>
 
-<h3 align="center">
+<h2 align="center">
 
 | **Package source:** | Source Tarball | Binary | Git | Node |             Gem              |
 | :-----------------: | :------------: | :----: | :-: | :--: | :--------------------------: |
 |     **Status:**     |      :x:       |  :x:   | :x: | :x:  | :heavy_check_mark: (default) |
 
-</h3>
-
-## Introduction
+</h2>
 
 > This repository compatible with [ZI](https://github.com/z-shell-zi)
 
