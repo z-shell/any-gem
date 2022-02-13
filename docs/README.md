@@ -2,16 +2,16 @@
   <a href="https://github.com/z-shell/zi">
     <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80">
   </a>
-❮ ZI ❯ Package - Any Gem
+❮ ZI ❯ Special Package - Any Gem
 </h2>
 
-<h2 align="center">
+<h3 align="center">
 
 | **Package source:** | Source Tarball | Binary | Git | Node |             Gem              |
 | :-----------------: | :------------: | :----: | :-: | :--: | :--------------------------: |
 |     **Status:**     |      :x:       |  :x:   | :x: | :x:  | :heavy_check_mark: (default) |
 
-</h2>
+</h3>
 
 > This repository compatible with [ZI](https://github.com/z-shell-zi)
 
