@@ -1,6 +1,6 @@
 <h2 align="center">
   <a href="https://github.com/z-shell/zi">
-    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80">
+    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80" />
   </a>
 ❮ ZI ❯ Special Package - Any Gem
 </h2>
@@ -12,17 +12,6 @@
 |     **Status:**     |      :x:       |  :x:   | :x: | :x:  | :heavy_check_mark: (default) |
 
 </h3>
-
-> This repository compatible with [ZI](https://github.com/z-shell-zi)
-
-[ZI](https://github.com/z-shell/zi) can use a `package.json`
-(similar in construct to the one used in `npm` packages) to automatically:
-
-- get the plugin's Git repository OR release-package URL,
-- get the list of the recommended ices for the plugin,
-  - there can be multiple lists of ices,
-  - the ice lists are stored in _profiles_; there's at least one profile, _default_,
-  - the ices can be selectively overridden.
 
 ## The `any-gem` Package
 
@@ -58,3 +47,17 @@ zi lucid id-as="${${:-%IDAS%}:-%GEM%}" as=null \
     sbin="n:bin/*" for \
         z-shell/null
 ```
+
+---
+
+
+> This repository compatible with [ZI](https://github.com/z-shell/zi)
+
+[ZI](https://github.com/z-shell/zi) can use a `package.json`
+(similar in construct to the one used in `npm` packages) to automatically:
+
+- get the plugin's Git repository OR release-package URL,
+- get the list of the recommended ices for the plugin,
+  - there can be multiple lists of ices,
+  - the ice lists are stored in _profiles_; there's at least one profile, _default_,
+  - the ices can be selectively overridden.
