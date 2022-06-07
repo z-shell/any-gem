@@ -1,9 +1,7 @@
-<h2 align="center">
+<h1 align="center">
   <a href="https://github.com/z-shell/zi">
-    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80" />
-  </a>
-❮ ZI ❯ Special Package - Any Gem
-</h2>
+    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" />
+  </a> ❮ ZI ❯ Special Package - Any Gem </h1>
 
 <h3 align="center">
 
@@ -15,46 +13,45 @@
 
 ## The `any-gem` Package
 
-This package is special – it is designed for easy installing of any Ruby Gems locally inside the plugin directory,
-exposing their binaries via _shims_ (i.e.: forwarder scripts) created automatically by [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex.
+This package is special – it is designed for easy installing of any Ruby Gems locally inside the plugin directory, exposing their binaries via _shims_ (i.e.: forwarder scripts) created automatically by [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex.
 
-The Ruby Gem(s) to install are specified by the `param'GEM → {gem1}; GEM2 → {gem2}; …'` ice. The name of the plugin will be `{gem1}`, unless `id-as''` ice
-will be provided, or the `IDAS` param will be set (i.e.: `param'IDAS → my-plugin; GEM → …'`).
+The Ruby Gem(s) to install are specified by the `param'GEM → {gem1}; GEM2 → {gem2}; …'` ice. The name of the plugin will be `{gem1}`, unless `id-as''` ice will be provided, or the `IDAS` param will be set (i.e.: `param'IDAS → my-plugin; GEM → …'`).
 
 A few example invocations:
 
-```zsh
-# Install `chef' Gem and call the plugin with the same name
+```shell
+# Install `chef` Gem and call the plugin with the same name
 zi pack param='GEM → chef' for any-gem
+```
 
+```shell
 # Install `rails' Gem and call the plugin: ruby-on-rails
 zi id-as=ruby-on-rails pack param='GEM → rails' for any-gem
+```
 
-# Install `jekyll' Gem and call the plugin: jkl
+```shell
+# Install `jekyll` Gem and call the plugin: jkl
 zi pack param='IDAS → jkl; GEM → jekyll' for any-gem
 ```
 
 ## Default Profile
 
-The only profile that does all the magic. It relies on the `%PARAM%` keywords,
-which are substituted with the `value` from the ice `param'PARAM → value; …'`.
+The only profile that does all the magic. It relies on the `%PARAM%` keywords, which are substituted with the `value` from the ice `param'PARAM → value; …'`.
 
 The ZI command executed will be equivalent to:
 
-```zsh
+```shell
 zi lucid id-as="${${:-%IDAS%}:-%GEM%}" as=null \
-    gem="%GEM%;%GEM2%;%GEM3%;%GEM4%;%GEM5%;%GEM6%;%GEM7%;%OTHER%" \
-    sbin="n:bin/*" for \
-        z-shell/null
+  gem="%GEM%;%GEM2%;%GEM3%;%GEM4%;%GEM5%;%GEM6%;%GEM7%;%OTHER%" \
+  sbin="n:bin/*" for \
+    z-shell/null
 ```
 
 ---
 
-
 > This repository compatible with [ZI](https://github.com/z-shell/zi)
 
-[ZI](https://github.com/z-shell/zi) can use a `package.json`
-(similar in construct to the one used in `npm` packages) to automatically:
+[ZI](https://github.com/z-shell/zi) can use a `package.json` (similar in construct to the one used in `npm` packages) to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
