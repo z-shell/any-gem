@@ -1,15 +1,27 @@
 <h1 align="center">
-  <a href="https://github.com/z-shell/zi">
-    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" />
-  </a> ❮ ZI ❯ Special Package - Any Gem </h1>
-
+  <p><a href="https://github.com/z-shell/zi">
+    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" /></a>
+    ❮ ZI ❯ Special Package - Any Gem </p>
+</h1>
 <h3 align="center">
-
-| **Package source:** | Source Tarball | Binary | Git | Node |             Gem              |
-| :-----------------: | :------------: | :----: | :-: | :--: | :--------------------------: |
-|     **Status:**     |      :x:       |  :x:   | :x: | :x:  | :heavy_check_mark: (default) |
-
-</h3>
+<table>
+    <tr>
+        <td><b>Package source:</b></td>
+        <td>Source Tarball</td>
+        <td>Binary</td>
+        <td>Git</td>
+        <td>Node</td>
+        <td>Gem</td>
+    </tr>
+    <tr>
+        <td><b>Status:</b></td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>✔️ (default)</td>
+    </tr>
+</table></h3><hr />
 
 ## The `any-gem` Package
 
@@ -51,7 +63,7 @@ zi lucid id-as="${${:-%IDAS%}:-%GEM%}" as=null \
 
 > This repository compatible with [ZI](https://github.com/z-shell/zi)
 
-[ZI](https://github.com/z-shell/zi) can use a `package.json` (similar in construct to the one used in `npm` packages) to automatically:
+The [ZI](https://github.com/z-shell/zi) package that can use the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
